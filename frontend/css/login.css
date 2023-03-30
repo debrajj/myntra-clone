@@ -256,9 +256,9 @@ body{
  #search > input{
    margin-top: unset;
  }
- #search #search_icon{
+ /* #search #search_icon{
    top: 5.6rem;
- }
+ } */
  #boxbody{
    background-color: white;
    width :400px;
@@ -322,3 +322,8 @@ body{
 
 
 
+ #signUp{
+    text-decoration: none;
+    color: #ff3f6c;
+    
+ }
