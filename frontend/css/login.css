@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap');
+
+:root {
+    font-size: 62.5%;
+    --primaryFont: 'DM Sans', sans-serif;
+    --charSpace: 6px;
+    --primaryColor: #3e4152;
+    --secondaryColor: #fafbfc;
+}
+
+body {
+
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body img {
+    cursor: pointer;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Assistant', sans-serif;
+}
+
+/* -------------NAV BAR----------------- */
+header {
+    width: 100%;
+    height: 95px;
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffff;
+    opacity: 1;
+    z-index: 1000;
+}
+
+header>* {
+    height: 100%;
+}
+
+
+#logo {
+    width: 12%;
+}
+
+#logo>img {
+    width: 80%;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+#nav_bar {
+    width: 36%;
+    list-style: none;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+    color: #282c3f;
+    font-family: var(--primaryFont);
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nav_bar a {
+    text-decoration: none;
+    color: unset;
+    display: block;
+    height: 100%;
+    padding-top: 4.5rem;
+}
+
+#nav_bar li:hover a {
+    border-bottom: 5px solid #f58fa0;
+}
+
+#nav_bar li:nth-child(1):hover a {
+    border-bottom: 5px solid #ff4500;
+}
+
+#nav_bar li:nth-child(2):hover a {
+    border-bottom: 5px solid #ff69b4;
+}
+
+#nav_bar li:nth-child(3):hover a {
+    border-bottom: 5px solid #ffa500;
+}
+
+#nav_bar li:nth-child(4):hover a {
+    border-bottom: 5px solid #f2c210;
+    ;
+}
+
+#nav_bar li:nth-child(5):hover a {
+    border-bottom: 5px solid #0db7af;
+}
+
+#nav_bar li {
+    height: 100%;
+}
+
+#nav_bar #studio {
+    position: relative;
+}
+
+#nav_bar span {
+    color: red;
+    position: absolute;
+    top: 30%;
+    left: 105%;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#search {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 14px;
+    color: #696e79;
+    position: relative;
+}
+
+#search>#search_bar {
+    display: inline-block;
+    width: 95%;
+    height: 45px;
+    line-height: 24px;
+    padding: 1.7rem;
+    padding-left: 7rem;
+    background-color: #f5f5f6;
+    border: none;
+    border-radius: 0.6rem;
+    color: #696e79;
+    letter-spacing: 0.5px;
+}
+
+#search>#search_bar:focus {
+    outline: 0;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+#search #search_icon {
+    position: absolute;
+    left: 4rem;
+}
+
+#right_icon {
+    width: 14%;
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+#right_icon>div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+}
+
+#right_icon i {
+    font-size: 2rem;
+}
+
+/* ===========DEBRAJ ROY================ */
+/* PROFILE DROPDOWN MENU */
+#tgl {
+    position: relative;
+}
+
+#tgl>#drop {
+    width: 20rem;
+    height: 0;
+    padding: 1rem;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 2rem; */
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    color: #333;
+    font-size: 1.2rem;
+}
+
+#tgl a {
+    width: 85%;
+    text-decoration: none;
+    color: unset;
+    display: inline-block;
+    text-align: right;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    transition: all 500ms;
+
+}
+
+#tgl:hover #drop {
+    visibility: visible;
+    width: 20rem;
+    height: 15rem;
+}
+
+#tgl>#drop .dropList {
+    font-size: 0;
+}
+
+#tgl:hover>#drop .dropList {
+    font-size: 2rem;
+}
+
+#tgl a:hover {
+    background-color: #f8d7cf;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+
+
+
+body{
+    background-image: linear-gradient(to left, #fdeeec, #fdeeed, #fdedef, #fdedf1, #fcedf3);
+ }
+ #search > input{
+   margin-top: unset;
+ }
+ #search #search_icon{
+   top: 5.6rem;
+ }
+ #boxbody{
+   background-color: white;
+   width :400px;
+   margin: auto;
+   margin-top: 12.5rem;
+ }
+ img{
+   width: 100%;
+ }
+ h2{
+   font-size: 2.3rem;
+ }
+ h2 span,p{
+   color: gray;
+ }
+ p{
+   margin-top: 1rem;
+   font-size: 1.5rem;
+ }
+ p span{
+   color:#ff3f6c;
+ }
+ .signin{
+   padding: 30px;
+ }
+ button{
+   width: 100%;
+   color: white;
+   background-color:#ff3f6c ;
+   border: none;
+   text-transform: uppercase;
+   padding: 12px;
+   margin-top: 2.5rem;
+   cursor: pointer;
+ }
+ input{
+    padding: 10px 145px 10px 20px;
+    margin-top:20px ;
+ }
+ .imgbo{
+   margin-bottom: -10px;
+ }
+ h3{
+   margin-bottom: -2px;
+ }
+ 
+ #signUp, #logIn{
+   cursor: pointer;
+   font-weight: 900;
+   letter-spacing: 1px;
+   border-bottom: 1px solid #ff3f6c;
+ }
+ /* RIGHT SIDE ICONS */
+ #right_icon{
+   gap: 0.5rem;
+ }
+ #right_icon > div{
+   cursor: pointer;   
+ }
+
+
+
+
