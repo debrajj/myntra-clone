@@ -1,5 +1,6 @@
 const express=require("express")
 const noteroute=express.Router()
+const {productsdetails}=require("../model/note.module")
 const {noteMOdel}=require("../model/note.module")
 const jwt=require("jsonwebtoken")
 
@@ -15,63 +16,18 @@ noteroute.post("/add",async (req,res)=>{
     }
 })
 
+
 noteroute.get("/show",async(req,res)=>{
-    const token=req.headers.auth;
-    const decoded=jwt.verify(token,"masai")
+    // const token=req.header.authorization
+    // const decoded=jwt.verify(token,process.env.secrete_key)
+
     try {
-        if(decoded){
-            let data=await noteMOdel.find({"userid":decoded.userid})
-            res.status(200).send({"data":data})
-
-        }else{
-            res.status(400).send({"msg":err.massage})
-        }
-               
-        
+        let data=await noteMOdel.find()
+        res.status(200).send(data)
     } catch (error) {
-        res.status(400).send({"error":error})
-        
-    }
-    
-})
-
-
-
-
-
-
-
-
-noteroute.patch("/edit/:id",async(req,res)=>{
-    try {
-        let {id}=req.params
-        let payload=req.body
-        let data=await noteMOdel.findByIdAndUpdate({_id:id},payload)
-        res.status(200).send({"msg":"note upodated"})
-                
-    } catch (error) {
-        res.status(400).send({"error":error})
         console.log(error)
-        
     }
 })
-
-noteroute.delete("/delete/:id",async(req,res)=>{
-    try {
-        let {id}=req.params
-        
-        let data=await noteMOdel.findByIdAndDelete({_id:id})
-        res.status(200).send({"msg":"note deleted"})
-    } catch (error) {
-        res.status(400).send({"error":error})
-        console.log(error)
-        
-    }
-})
-
-
-
-
 
 module.exports={
     noteroute

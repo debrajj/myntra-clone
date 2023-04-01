@@ -1,12 +1,14 @@
 const express=require("express")
 const {userMOdel} = require("../model/usermodel")
+const {productsdetails}=require("../model/note.module")
 const uroute=express.Router()
 const bcrypt=require("bcrypt")
 var jwt = require('jsonwebtoken');
 
 
 uroute.get("/",(req,res)=>{
-    res.send("user page")
+    let data=productsdetails.find()
+    res.status(200).send(data)
 })
 
 
