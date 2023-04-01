@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dressify.com</title>
+    <link rel="stylesheet" href="../css/productspage.css">
+    <!-- FONT-AWESOME -->
+    <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        /* ===========DEBRAJ ROY================ */
+    </style>
+
+</head>
+
+<body>
+    <div id="flatdiscount">
+        <i id="sidePanel" class="fa-solid fa-caret-left"></i>
+        <h1>FLAT ₹300 OFF</h1>
+    </div>
+
+    <!-- HEADER MENU SECTION -->
+    <header>
+        <div id="logo">
+            <img src="../images/logo.jpeg" alt="brandLogo" id="landingPage">
+        </div>
+        <ul id="nav_bar">
+            <li id="megamenu_container"><a href="#">men</a></li>
+            <li><a href="#l">women</a></li>
+            <li><a href="#">kids</a></li>
+            <li><a href="#">home & living</a></li>
+            <li><a href="#">beauty</a></li>
+            <li id="studio"><a href="#">studio</a><span>new</span></li>
+        </ul>
+        <div id="search">
+            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+        </div>
+        <div id="right_icon">
+            <div id="tgl">
+                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+                <div id="drop">
+                    <a href="#" class="dropList">login</a>
+                    <a href="#" class="dropList">sign up</a>
+                </div>
+
+                <i class="fa-regular fa-user"></i>
+                <span>profile</span>
+            </div>
+            <div>
+                <i class="fa-regular fa-heart"></i>
+                <span>wishlist</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <span>bag</span>
+            </div>
+        </div>
+        <!-- TOGGLE MENU -->
+        <div id="toggle">
+            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="top">
+                    <a href="#">men</a>
+                    <a href="#">women</a>
+                    <a href="#">kids</a>
+                    <a href="#">home & living</a>
+                    <a href="#">beauty</a>
+                    <a href="#">studio</a>
+                </div>
+                <div class="bottom">
+                    <i class="fa-regular fa-user fa_user" id="profile"></i>
+                    <i class="fa-regular fa-heart fa_wishlist"></i>
+                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+  <div id="cat-sort">
+            <div id="cat">
+                <select class="min-fil">Bundles
+                    <option value="">Bundles</option>
+                    <option value="">Single styles</option>
+                </select>
+                <select style="margin-left: 15px;" class="min-fil">Country of origin
+                    <option value="">Country of origin</option>
+                    <option value="">All Countries</option>
+                    <option value="">India</option></select>
+                <select id="size" style=" margin-left: 15px;" class="min-fil">Size
+                    <option value="">Size</option>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                    <option value="xl">XL</option>
+                    <option value="xxl">XXL</option>
+                </select>
+            </div>
+            <div id="sort">
+                <select name="sort" id="sort1">
+                    <option value="">Sort by: Recommended</option>
+                    <option value="dec">Price: High to Low</option>
+                    <option value="asc">Price: Low to High</option>
+                    <option value="pop">Popularity</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div id="filters-products">
+        <div id="filters">
+            <div id="categ">
+                <h4 style="margin-left: 15px;">CATEGORIES</h4>
+                <input type="checkbox">T-Shirt </br>
+                <input type="checkbox">Loung T-Shirt
+            </div>
+            <div id="brand">
+                <h4 style="margin-left: 15px;">BRAND</h4>
+                <input type="checkbox">Roadster</br>
+                <input type="checkbox">Kalt</br>
+                <input type="checkbox">Puma</br>
+                <input type="checkbox">WROGN</br>
+                <input type="checkbox">QUANCIOUS</br>
+                <input type="checkbox">Being Human</br>
+                <input type="checkbox">Friskers</br>
+            </div>
+            <div id="price4">
+                <h4 style="margin-left: 15px;">PRICE</h4>
+                <input id="p1"  type="checkbox">Rs.301 - Rs.500</br>
+                <input id="p2" type="checkbox">Rs.501 - Rs.750</br>
+                <input id="p3" type="checkbox">Rs.751 - Rs.999</br>
+                <input id="p4" type="checkbox">Rs.1000 - Rs.5000</br>
+            </div>
+            <div id="discount">
+                <h4 style="margin-left: 15px;">DISCOUNT</h4>
+                <input type="checkbox">10% Discount</br>
+                <input type="checkbox">20% Discount</br>
+                <input type="checkbox">30% Discount</br>
+                <input type="checkbox">40% Discount</br>
+                <input type="checkbox">50% Discount</br>
+                <input type="checkbox">60% Discount</br>
+                <input type="checkbox">70% Discount</br>
+                <input type="checkbox">80% Discount</br>
+            </div>
+        </div>
+        <div id="product-details"></div>
+        
+
+
+
+
+
+    </div>
+
+    <div id="pagination">
+        <button id="previous">< Previous</button>
+        <div id="pages">
+           <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button>
+        </div>
+        <button id="next"> Next ></button>
+    </div>
+
+       
+<script src="../js/productspage.js"></script>
+  </body>
+</html>
+</script>
