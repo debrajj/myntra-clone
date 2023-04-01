@@ -48,15 +48,13 @@ header>* {
 }
 
 
-#logo {
-    width: 12%;
-}
 
-#logo>img {
-    width: 80%;
-    margin-top: 1rem;
-    cursor: pointer;
-}
+#logo img {
+    width: 160px; /* Set the width */
+    height: auto; /* Maintain the aspect ratio */
+    display: block; /* Remove any default spacing */
+    margin: 0 auto; /* Center the image horizontally */
+  }
 
 #nav_bar {
     width: 36%;

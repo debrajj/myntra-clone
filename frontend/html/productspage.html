@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,84 +10,85 @@
     <script src="https://kit.fontawesome.com/72215895a8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-        /* ===========DEBRAJ ROY================ */
+      /* ===========DEBRAJ ROY================ */
     </style>
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div id="flatdiscount">
-        <i id="sidePanel" class="fa-solid fa-caret-left"></i>
-        <h1>FLAT ₹300 OFF</h1>
+      <i id="sidePanel" class="fa-solid fa-caret-left"></i>
+      <h1>FLAT ₹300 OFF</h1>
     </div>
 
     <!-- HEADER MENU SECTION -->
     <header>
-        <div id="logo">
-            <img src="../images/logo.jpeg" alt="brandLogo" id="landingPage">
-        </div>
-        <ul id="nav_bar">
+      <div id="logo">
+        <a href="/frontend/index.html">
+          <img src="../images/logo.jpeg" alt="brandLogo" id="landingPage">
+        </a>
+      </div>
+      <ul id="nav_bar">
             <li id="megamenu_container"><a href="#">men</a></li>
             <li><a href="#l">women</a></li>
             <li><a href="#">kids</a></li>
             <li><a href="#">home & living</a></li>
             <li><a href="#">beauty</a></li>
             <li id="studio"><a href="#">studio</a><span>new</span></li>
-        </ul>
-        <div id="search">
-            <input type="text" id="search_bar" placeholder="Search for products, brands and more">
-            <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
-        </div>
-        <div id="right_icon">
-            <div id="tgl">
-                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
-                <div id="drop">
-                    <a href="#" class="dropList">login</a>
-                    <a href="#" class="dropList">sign up</a>
-                </div>
+      </ul>
+      <div id="search">
+        <input type="text" id="search_bar" placeholder="Search for products, brands and more">
+        <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
+      </div>
+      <div id="right_icon">
+        <div id="tgl">
+          <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+          <div id="drop">
+            <a href="#" class="dropList">login</a>
+            <a href="#" class="dropList">sign up</a>
+          </div>
 
-                <i class="fa-regular fa-user"></i>
-                <span>profile</span>
-            </div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>wishlist</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>bag</span>
-            </div>
+          <i class="fa-regular fa-user"></i>
+          <span>profile</span>
         </div>
-        <!-- TOGGLE MENU -->
-        <div id="toggle">
-            <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
-            <div id="myDropdown" class="dropdown-content">
-                <div class="top">
-                    <a href="#">men</a>
-                    <a href="#">women</a>
-                    <a href="#">kids</a>
-                    <a href="#">home & living</a>
-                    <a href="#">beauty</a>
-                    <a href="#">studio</a>
-                </div>
-                <div class="bottom">
-                    <i class="fa-regular fa-user fa_user" id="profile"></i>
-                    <i class="fa-regular fa-heart fa_wishlist"></i>
-                    <i class="fa-solid fa-bag-shopping fa_cart"></i>
-                </div>
-            </div>
+        <div>
+          <i class="fa-regular fa-heart"></i>
+          <span>wishlist</span>
         </div>
+        <div>
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span>bag</span>
+        </div>
+      </div>
+      <!-- TOGGLE MENU -->
+      <div id="toggle">
+        <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
+        <div id="myDropdown" class="dropdown-content">
+          <div class="top">
+            <a href="#">men</a>
+            <a href="#">women</a>
+            <a href="#">kids</a>
+            <a href="#">home & living</a>
+            <a href="#">beauty</a>
+            <a href="#">studio</a>
+          </div>
+          <div class="bottom">
+            <i class="fa-regular fa-user fa_user" id="profile"></i>
+            <i class="fa-regular fa-heart fa_wishlist"></i>
+            <i class="fa-solid fa-bag-shopping fa_cart"></i>
+          </div>
+        </div>
+      </div>
     </header>
 
 
-  <div id="cat-sort">
-            <div id="cat">
+    <div id="cat-sort">
+      <div id="cat">
                 <select class="min-fil">Bundles
                     <option value="">Bundles</option>
                     <option value="">Single styles</option>
-                </select>
+        </select>
                 <select style="margin-left: 15px;" class="min-fil">Country of origin
                     <option value="">Country of origin</option>
                     <option value="">All Countries</option>
@@ -99,25 +100,62 @@
                     <option value="large">Large</option>
                     <option value="xl">XL</option>
                     <option value="xxl">XXL</option>
-                </select>
-            </div>
-            <div id="sort">
-                <select name="sort" id="sort1">
-                    <option value="">Sort by: Recommended</option>
-                    <option value="dec">Price: High to Low</option>
-                    <option value="asc">Price: Low to High</option>
-                    <option value="pop">Popularity</option>
-                </select>
-            </div>
-        </div>
+        </select>
+      </div>
+      <select name="design" id="design">
+        <option value="Design">Design</option>
+        <option value="Solid">Solid</option>
+        <option value="Printed">Printed</option>
+        <option value="Graphic Print">Graphic Print</option>
+        <option value="Typography">Typography</option>
+        <option value="Plain">Plain</option>
+        <option value="All Over Printed">All Over Printed</option>
+        <option value="Color Block">Color Block</option>
+        <option value="Striped">Striped</option>
+        <option value="Aop">Aop</option>
+        <option value="Checked">Checked</option>
+        <option value="Colourblocked">Colourblocked</option>
+        <option value="Checkered">Checkered</option>
+        <option value="Tie & Dye">Tie & Dye</option>
+        <option value="Washed">Washed</option>
+        <option value="Floral Print">Floral Print</option>
+        <option value="All Over Print">All Over Print</option>
+        <option value="Embroidered">Embroidered</option>
+        <option value="Abstract">Abstract</option>
+        <option value="Hyper Print">Hyper Print</option>
+        <option value="Selfdesign">Self Design</option>
+      </select>
+      <select name="fit" id="fit">
+        <option value="fit">Fit</option>
+        <option value="Regular Fit">Regular Fit</option>
+        <option value="Slim Fit">Slim Fit</option>
+        <option value="Oversized">Oversized</option>
+        <option value="Relaxed Fit">Relaxed Fit</option>
+        <option value="Skinny Fit">Skinny Fit</option>
+        <option value="Slim">Slim</option>
+        <option value="Loose Fit">Loose Fit</option>
+        <option value="Regular">Regular</option>
+        <option value="Super Skinny Fit">Super Skinny Fit</option>
+        <option value="Loose">Loose</option>
+      </select>
+      <div id="sort">
+        <select name="sort" id="sort1">
+          <option value="">Sort by: Recommended</option>
+          <option value="dec">Price: High to Low</option>
+          <option value="asc">Price: Low to High</option>
+          <option value="pop">Popularity</option>
+        </select>
+      </div>
     </div>
+
+</div>
     <div id="filters-products">
-        <div id="filters">
-            <div id="categ">
-                <h4 style="margin-left: 15px;">CATEGORIES</h4>
+      <div id="filters">
+        <div id="categ">
+          <h4 style="margin-left: 15px;">CATEGORIES</h4>
                 <input type="checkbox">T-Shirt </br>
                 <input type="checkbox">Loung T-Shirt
-            </div>
+        </div>
             <div id="brand">
                 <h4 style="margin-left: 15px;">BRAND</h4>
                 <input type="checkbox">Roadster</br>
@@ -146,7 +184,7 @@
                 <input type="checkbox">70% Discount</br>
                 <input type="checkbox">80% Discount</br>
             </div>
-        </div>
+      </div>
         <div id="product-details"></div>
         
 
@@ -154,18 +192,19 @@
 
 
 
+      <div id="product-details"></div>
     </div>
 
     <div id="pagination">
         <button id="previous">< Previous</button>
-        <div id="pages">
+          <div id="pages">
            <button>1</button><button>2</button><button>3</button><button>4</button><button>5</button><button>6</button><button>7</button><button>8</button><button>9</button>
-        </div>
-        <button id="next"> Next ></button>
+          </div>
+          <button id="next"> Next ></button>
     </div>
 
        
-<script src="../js/productspage.js"></script>
+    <script src="../js/productspage.js"></script>
   </body>
 </html>
 </script>
