@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Page</title>
+
+    <link rel="stylesheet" href="../css/address.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap" rel="stylesheet" />
+     <!-- adding font awesome kit -->
+    <script src="https://kit.fontawesome.com/f1eae3bf56.js" crossorigin="anonymous"></script>
+
+    <!-- scipt for the sliding banner -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script> 
+
+
+</head>
+<body>
+
+
+      
+      <div class="payment-box" >
+        <h1 style="text-align: center; padding-left: 150px;">Payment Page</h1>
+        <div id="lower_box">
+            <div id="lower_box_left">
+                <div id="active">&nbsp; DEBIT/CREDIT CARD </div>
+                <hr>
+                <div class="inactive"> WALLET </div>
+                <hr>
+                <div class="inactive"> UPI </div>
+                <hr>
+                <div class="inactive"> NET BANKING </div>
+                <hr>
+                <div class="inactive"> CASH ON DELIVERY </div>
+                <p>Use online payment for safety and to avail </br> attractive cashback offers.</p>
+                <hr>
+            </div>
+            <div>
+                <div id="lower_right_box">
+
+                    
+                        <div>
+                            <img width="20px" src="https://images.bewakoof.com/web/Add-card-icon-1600332484.png" alt="">
+                            <span id="new_card">Enter Card Details</span>
+                        </div>
+
+
+                        <div class="fill-card-details">
+                            <div id="card_num">
+                                <input id="num_card" type="number " autocomplete="new-password" name="card_no"
+                                    placeholder=" XXXX XXXX XXXX XXXX" minlength="16" maxlength="16" >
+                            </div>
+
+                            <div id="card_name">
+                                <input type="text" name="card_name" placeholder=" Name On Card">
+                            </div>
+
+                            <div id="card_expiry_cvv">
+                                <input type="year" name="card_expiry" placeholder=" Expiry(MM/YY)" maxlength="5">
+                                <input style="margin-left: 10px;" type="password" name="card_CVV" placeholder=" CVV">
+                            </div>
+
+                            <div id="card_check_box">
+                                <input id="check_box" type="checkbox" name="card_check">
+                                <label for="card_check"> <strong> Securely save this card for faster payments. </strong>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div
+                            style="font-size: 10px; text-align: justify; opacity: 0.5; margin-top: 8px; margin-bottom: 25px; 
+                                    letter-spacing: 0.7px ">
+                            This transaction you make is totally secure. We don't save </br> your CVV number.
+                        </div>
+
+                        <div>
+                            
+                           <button  onclick="pay_now()" type="button" class="btn btn-info">
+                            <!-- <a href="ordercomplete.html">Pay Now</a> -->Pay Now
+                          </button>
+
+                        </div>
+                    <div class="succ">
+                      <h3 id="succ"></h3>
+                    </div>
+
+        
+</body>
+
+<script>
+ let paymentarr =JSON.parse( localStorage.getItem("payment") ) || [];
+
+function pay_now() {
+    
+
+  var cardNumber = document.getElementById("num_card").value;
+  var cardName = document.getElementsByName("card_name")[0].value;
+  var cardExpiry = document.getElementsByName("card_expiry")[0].value;
+  var cardCVV = document.getElementsByName("card_CVV")[0].value;
+  var checkBox = document.getElementsByName("card_check")[0].checked;
+  
+  // Card number validation
+  if (cardNumber.length != 16) {
+    alert("Please enter a valid 16-digit card number");
+    return false;
+  }
+  
+  // Card name validation
+  if (cardName == "") {
+    alert("Please enter the name on your card");
+    return false;
+  }
+  
+  // Card expiry date validation
+  var expiryRegex = /^([0-9]{2})\/([0-9]{2})$/;
+  if (!expiryRegex.test(cardExpiry)) {
+    alert("Please enter the expiry date in the format MM/YY");
+    return false;
+  }
+  
+  // Card CVV validation
+  if (cardCVV.length != 3) {
+    alert("Please enter a valid 3-digit CVV number");
+    return false;
+  }
+
+  if (checkBox == false) {
+    alert("Please check the box to securely save your card details for faster payments");
+    return false;
+  }
+  
+ 
+  let obj = {};
+  obj.cardNumber = cardNumber
+  obj.cardName = cardName
+  obj.cardCVV = cardCVV
+  obj.cardExpiry = cardExpiry
+  paymentarr.push(obj);
+  localStorage.setItem("payment" ,JSON.stringify(paymentarr))
+
+  console.log(paymentarr)
+
+ let succ=document.getElementById("succ")
+
+ setTimeout(() => {
+            
+  succ.innerText="Payment is processing"
+        }, 500);
+
+
+
+        setTimeout(() => {
+            
+          succ.innerText="Congratulations!!🎉Payment Successfull redirecting to new page🎊"
+                  }, 3000);
+          
+
+        
+
+ 
+ setTimeout(() => {
+            
+            window.location.href="../html/ordercompleted.html"
+        }, 5500);
+
+
+ return true;
+}
+
+
+
+</script>
+</html>

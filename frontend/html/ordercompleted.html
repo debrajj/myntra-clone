@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Complete</title>
+    <style>
+
+* {
+    color: black;
+    font-family: montserrat, sans-serif;
+}
+.mainhead {
+  width: 100%;
+  background: #fff;
+  height: 52px;
+  line-height: 52px;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  position: relative;
+}
+.mainheadrow{
+  max-width: 1170px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+  display: flex;
+}
+.mainheadrow>div:nth-child(1){
+/* border: 1px solid red; */
+width: 16%;
+
+}
+.mainheadrow>div:nth-child(1) img{
+     height: 20px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+
+
+}
+div>button{
+  border: hidden;
+  border-radius: 3px;
+}
+
+
+.mainheadrow>div:nth-child(2){
+/* border: 1px solid red; */
+width: 30%;
+margin-left: 100px;
+
+}
+.mainheadrow>div:nth-child(3){
+/* border: 1px solid red; */
+width: 25%;
+display: flex;
+
+
+}
+.mainheadrow>div:nth-child(4){
+/* border: 1px solid red; */
+width: 20%;
+display: flex;
+
+
+}
+.mainheadrow>div:nth-child(3)>form{
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  display: flex;
+
+}
+.mainheadrow>div:nth-child(3) input{
+ height: 80%;
+ width: 100%;
+ background: #eaeaea;
+ border: none;
+ border-radius: 7px;
+ margin-top: 2px;
+}
+.icon{
+  content: "\E90E"
+}
+a>i{
+  font-size: 22px;
+  margin-left: 20px;
+  color: rgb(43, 42, 42);
+}
+a{
+  font-size: 15px;
+  margin-left: 5px;
+  color: rgb(58, 55, 55);
+  text-decoration: none;
+}
+.fa, .fas {
+  margin-top: 15px;
+  margin-right: 10px;
+
+}
+span{
+  font-size: 15px;
+  margin-right: 20px;
+  margin-top: 3px;
+  font-family: montserrat,sans-serif;
+  color: black;
+
+}
+
+.fas, .fa-grip-lines-vertical{
+  margin-top: 10px;
+}
+.fa-search{
+  margin-top: 15px;
+}
+
+#refer_earn {
+    position: relative;
+    margin-left: 40%;
+    margin-bottom: 5%;
+}
+#refer_earn img {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
+h4 {
+    margin-top: -145px;
+    margin-left: 170px;
+    font-size: 19px;
+}
+
+p {
+    margin-top: -18px;
+    font-size: 15px;
+    margin-left: 170px;
+    letter-spacing: 0.6px;
+}
+
+.img_size {
+    width: 30px;
+    height: 30px;
+}
+
+button {
+    width: 300px; 
+    height: 40px; 
+    border-radius: 5px;
+    margin-top: 1%;
+    margin-left: 40%;
+    color: white;
+    background-color: rgb(66, 162, 162);
+    border: 1px solid rgb(66, 162, 162);
+    font-size: 16px;
+}
+button {
+  background: linear-gradient(to bottom, #fa711c, #fc1313);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+body {
+  background: #a8ff78;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+}
+
+
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;1,200;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
+   
+    <script
+    src="https://kit.fontawesome.com/f1eae3bf56.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+
+
+<body>
+    
+   <div class="box">
+       
+          <div>
+              <div id="refer_earn">
+                  <img style="width: 350px; height: 290px;" src="	https://images.bewakoof.com/web/discounts-and-offers-1605624171.gif" alt="">
+            </div>
+
+            <div>
+                <div >
+                    <img style="width: 100%;" src="https://images.bewakoof.com/uploads/grid/app/desktop-survey-1673330211.jpg" 
+                    alt="">
+                </div>
+            </div>
+
+
+             </div>
+          </div>
+  <div>
+          <div style="text-align: center;">
+            We think you'd like these
+          </div>
+
+          <div style="text-align: center;">
+            Track and manage all your orders<br>
+            
+          </div>
+
+          <div>
+           <a href='../index.html'> <button>Continue Shopping</button></a>
+          </div>
+  </div>    
+
+   </div>
+</body>
+</html>
+
+
+<script>
+ let tag = document.getElementById("tag")
+    console.log(tag)
+  let users = JSON.parse(localStorage.getItem("users")) 
+  let name=(users[users.length-1].Name)
+  tag.innerHTML=name
+  console.log(name)
+
+
+
+
+  var viewOrdersBtn = document.querySelector('button');
+var trackOrders = document.querySelector('div:nth-of-type(2)');
+
+viewOrdersBtn.addEventListener('click', function() {
+  trackOrders.classList.toggle('visible');
+});
+
+</script>
