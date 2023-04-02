@@ -21,3 +21,25 @@ var slideIndex = 0;
   }
 
 /* ===========DEBRAJ ROY================ */
+let name = localStorage.getItem("name");
+  let token = localStorage.getItem("token");
+  let user = document.getElementById("profile");
+  if (nameinp) {
+    user.innerText = nameinp;
+  }
+
+  let button = document.getElementById("List");
+  button.addEventListener("click", () => {
+    // localStorage.removeItem(name);
+    // localStorage.removeItem(token);
+    console.log(nameinp, token);
+    localStorage.clear();
+    user.innerText = "Profile";
+  });
+
+
+
+
+
+
+  

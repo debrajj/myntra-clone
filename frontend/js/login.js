@@ -20,9 +20,13 @@ submit.addEventListener("click", (e) => {
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
+      console.log(data.user);
+      nameinp = data.user.name;
+      console.log(nameinp);
       localStorage.setItem("token", data.token);
-      alert(data.msg);
-      window.location.href = "./index.html";
+      localStorage.setItem("name", nameinp);
+    
+      window.location.href = "../index.html";
     })
     .catch((err) => console.log(err));
 });

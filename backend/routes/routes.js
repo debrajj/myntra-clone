@@ -36,31 +36,22 @@ uroute.post("/register",async(req,res)=>{
 
 
 uroute.post("/login",async(req,res)=>{
-    let {email,password}=req.body
-       
     try {
-        let data=await userMOdel.find({email})
-        console.log(data)
-        if(data.length>0){
-            bcrypt.compare(password, data[0].password, (err, result)=> {
-                if(result){
-                    res.status(200).send({"msg":`login sucessfull`,"token":jwt.sign({"userid":data[0]._id }, 'masai',{expiresIn:"1hr"})})
-
-
-                }else{
-                    res.status(400).send({"msg":"user not found"})
-
-                }
-            });
-            
-
+        const payload=req.body
+        const user=await userMOdel.findOne({email:payload.email})
+        if(!user)  return res.send({"msg":"please signup first"})
+           const psswordcorrect=await bcrypt.compareSync(payload.password,user.password)
+           if(psswordcorrect){
+            const token=await jwt.sign({email:user.email,userid:user._id},"masai",{expiresIn:"1hr"})
+            res.status(200).json({msg:"Login success",token,user})
+           }
+        else{
+            res.status(400).json({msg:"invalid credentials"})
         }
-        
 
-        
-    } catch (error) {
-        res.status(400).send({"msg":error})
-        
+}
+     catch (error) {
+        console.log(error)
     }
 })
 

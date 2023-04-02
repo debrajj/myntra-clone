@@ -49,11 +49,15 @@ header>* {
 
 
 #logo img {
-    width: 160px; /* Set the width */
-    height: auto; /* Maintain the aspect ratio */
-    display: block; /* Remove any default spacing */
-    margin: 0 auto; /* Center the image horizontally */
-  }
+    width: 160px;
+    /* Set the width */
+    height: auto;
+    /* Maintain the aspect ratio */
+    display: block;
+    /* Remove any default spacing */
+    margin: 0 auto;
+    /* Center the image horizontally */
+}
 
 #nav_bar {
     width: 36%;
@@ -353,7 +357,7 @@ header>* {
     width: 300px;
     border-radius: 10px;
     /* border: 1px solid rgb(227, 185, 192); */
-    /* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+/* box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     overflow: hidden;
 }
 
@@ -504,7 +508,8 @@ header>* {
 
 
 .product {
-    width: calc(25% - 20px); /* 25% width for each box, minus 20px margin */
+    width: calc(25% - 20px);
+    /* 25% width for each box, minus 20px margin */
     background-color: #ffffff;
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -517,7 +522,8 @@ header>* {
 }
 
 .product:nth-child(4n+1) {
-    margin-left: 0; /* remove left margin for the first box in each row */
+    margin-left: 0;
+    /* remove left margin for the first box in each row */
 }
 
 .product:hover {
@@ -533,7 +539,7 @@ header>* {
     justify-content: center;
     align-items: center;
     position: relative;
-    
+
     border: 1px solid rgb(0, 0, 0);
 
 }
@@ -561,7 +567,7 @@ header>* {
     opacity: 0;
     transition: opacity 0.2s ease-in-out;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    
+
 }
 
 .product:hover .product-image-container:after {
@@ -584,6 +590,32 @@ h2 {
     color: #0085FF;
 }
 
+
+#add-to-cart-button {
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 10px 20px;
+    background-color: #f58fa0;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+
+
+
+
+
+
+
 p {
     font-size: 1em;
     margin: 5px;
@@ -602,28 +634,104 @@ p {
 .product:hover .product-price {
     color: #F9A602;
 }
-    
-    .product:hover .product-price {
+
+.product:hover .product-price {
     color: #F9A602;
-    }
-    
-    .product-brand {
+}
+
+.product-brand {
     color: #333;
     font-size: 0.9em;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-top: 10px;
-    }
+}
 
 
 
 
+.product .button-quantity {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.product .button-quantity input[type='number'] {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.product .button-quantity button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.product .button-quantity button:hover {
+    background-color: #006380;
+}
 
 /* 
     ================footer==== */
-
+    .product-actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+      }
+      
+      .product-quantity {
+        display: flex;
+        align-items: center;
+        order: 1; /* changed */
+      }
+      
+      .product-quantity label {
+        margin-right: 10px;
+      }
+      
+      .product-quantity input[type="number"] {
+        width: 50px;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-left: -45px;
     
- 
+      }
+      
+      .add-to-cart {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+        order: 2; /* changed */
+      }
+      
+      .add-to-cart:hover {
+        background-color: #0062cc;
+      }
+      
+      .quantity-add-to-cart {
+        display: flex;
+        align-items: center;
+        margin-left: 5px;
+        justify-content: space-around;
+      }
+      
+
+
+
+
+
+
+
+
+
 
 .container {
     max-width: 75%;
@@ -732,7 +840,7 @@ ul {
     margin-right: 15px;
 }
 
-.footer-promise strong{
+.footer-promise strong {
     font-size: 16px;
 }
 
@@ -743,6 +851,3 @@ ul {
 
 
 /* ==================end footer============== */
-
-
-

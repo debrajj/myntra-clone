@@ -26,7 +26,7 @@
     <!-- HEADER MENU SECTION -->
     <header>
         <div id="logo">
-            <a href="/frontend/index.html">
+            <a href="../index.html">
                 <img src="../images/logo.jpeg" alt="brandLogo" id="landingPage">
             </a>
 
@@ -43,26 +43,30 @@
             <input type="text" id="search_bar" placeholder="Search for products, brands and more">
             <i class="fa-solid fa-magnifying-glass" id="search_icon"></i>
         </div>
-        <div id="right_icon">
-            <div id="tgl">
-                <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
-                <div id="drop">
-                    <a href="#" class="dropList">login</a>
-                    <a href="#" class="dropList">sign up</a>
-                </div>
+     <!-- ===============nav========= -->
+     <div id="right_icon">
+        <div id="tgl">
+            <!-- DROPDOWN MENU TO BE CREATED FOR LOGIN AND SIGNUP -->
+            <div id="drop">
+                <a href="./login.html" class="dropList">login</a>
+                <a href="./signup.html" class="dropList">sign up</a>
+            </div>
 
-                <i class="fa-regular fa-user"></i>
-                <span>profile</span>
-            </div>
-            <div>
-                <i class="fa-regular fa-heart"></i>
-                <span>wishlist</span>
-            </div>
-            <div>
-                <i class="fa-solid fa-bag-shopping"></i>
-                <span>bag</span>
-            </div>
+            <i class="fa-regular fa-user"></i>
+            <span>profile</span>
         </div>
+        <div>
+            <i class="fa-regular fa-heart"></i>
+            <span>wishlist</span>
+        </div>
+        <div>
+            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="./cart.html class="icon-link" style="text-decoration: none; color: black;">
+              <span>bag</span>
+            </a>
+        </div>
+    </div>
+<!-- ====nav end========== -->
         <!-- TOGGLE MENU -->
         <div id="toggle">
             <i class='bx bx-menu dropbtn' onclick="myFunction()"></i>
@@ -216,7 +220,7 @@
             .then((data) => {
                 console.log(data);
                 alert(data.msg);
-                window.location.href = "./frontend/index.html";
+                window.location.href = "../index.html";
             })
             .catch((err) => {
                 console.log(err);

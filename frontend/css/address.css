@@ -1,0 +1,154 @@
+* {
+    color: black;
+    font-family: montserrat, sans-serif;
+}
+body{
+    background: rgb(253,29,29);
+/* background: linear-gradient(90deg, rgba(253,29,29,0.5803571428571428) 24%, rgba(252,176,69,0.5551470588235294) 74%); */
+background-image: url("https://img.freepik.com/free-photo/stylish-soft-blue-curve-lines-abstract-background_1017-19950.jpg?w=1380&t=st=1680440969~exp=1680441569~hmac=6de6cf71328cef38700b21e14f2df25cbff9bda4c2e805f656b5cd20c7809127");
+background-position: center;
+background-size: cover;
+}
+.payment-box{
+    margin-top: 80px;
+    margin-left: 200px;
+    width: 1000px;
+    
+}
+#pay {
+    margin-left: 50%;
+}
+
+#lower_box {
+    margin-top: 2%;
+    margin-left: 12%;
+    padding-right: 20px;
+    display: flex;
+    border: 2px solid rgb(0, 0, 0);
+    width: 87%;
+    min-height: 520px;
+   
+}
+
+#lower_box>div:nth-child(1) {
+    width: 400px;
+    background-color: rgb(240, 239, 239);
+    color: #000;
+    line-height: normal;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 600;
+    
+
+}
+
+.inactive {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    margin-left: 13px;
+}
+
+#lower_box>div:nth-child(1)>hr {
+    border: 0.1px solid #e0e0e0;
+}
+
+#active {
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 13px;
+    border-left: 6px solid #42a2a2;
+}
+
+p {
+    margin-top: -9px;
+    font-weight: 100;
+    font-size: 10px;
+    margin-left: 13px;
+    color: rgb(112, 112, 112);
+    letter-spacing: .2px;
+    padding-top: 2px;
+}
+
+#lower_right_box {
+    width: 78%;
+    margin-left: 30px;
+    border: 1px solid #000000;
+    padding: 20px;
+    padding-right: 20px;
+    margin-top: 12%;
+    border-radius: 5px;
+
+    background-color: #f3f3f3;
+
+}
+
+#lower_right_box>div:nth-child(1) {
+    margin-left: 10px;
+    
+}
+
+#card_num {
+    display: inline-block;
+    position: relative;
+    margin-top: 20px;
+}
+
+#card_num>input {
+    width: 335px;
+    height: 35px;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    border: 0.1px solid rgb(161, 157, 157);
+}
+
+#card_name>input {
+    width: 335px;
+    height: 35px;
+    border-radius: 5px;
+    letter-spacing: 0.8px;
+    margin-top: 20px;
+    border: 0.1px solid rgb(161, 157, 157);
+}
+
+#card_expiry_cvv {
+    display: inline-block;
+}
+
+#card_expiry_cvv>input {
+    width: 158px;
+    height: 35px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    margin-top: 20px;
+    border: 0.1px solid rgb(161, 157, 157);
+}
+
+#card_check_box {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#card_check_box>label {
+    font-size: 12px;
+    text-align: top;
+
+}
+
+#payment {
+    margin-left: 10px;
+    width: 330px;
+    height: 50px;
+    color: white;
+    background-color: rgb(212, 203, 203);
+    font-size: 20px;
+    border: 0.1px solid rgb(212, 203, 203);
+    border-radius: 5px;
+
+}
+
+#new_card {
+    margin-left: 13px;
+    font-size: 17px;
+    text-align: center;
+    position: relative;
+}
