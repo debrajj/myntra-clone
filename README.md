@@ -56,38 +56,38 @@ To run this application on your local system
 
 ### Home Page and Footer
 
-  <img width="1000" alt="Home" src="">
-  <img width="1000" alt="Footer" src="">
+  <img width="1000" alt="Home" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/landing%20page.png">
+  <img width="1000" alt="Footer" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/footer.png">
 ---
 
 ### Products Page
 
-<img width="1000" alt="cat3" src=" ">
+<img width="1000" alt="cat3" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/products%20page.png?raw=true">
 
 ---
 
 ### Login Page/Signup Page
 
-## <img width="1000" alt="login" src="">
-## <img width="1000" alt="login" src="">
+## <img width="1000" alt="login" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/login.png?raw=true">
+## <img width="1000" alt="login" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/register.png?raw=true">
 
 ---
 
 ### Cart Page
 
-<img width="1000" alt="Cart" src="">
+<img width="1000" alt="Cart" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/rcart.png?raw=true">
 
 ---
 
 ### Payments Page
 
-<img width="1000" alt="pay" src="">
+<img width="1000" alt="pay" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/paymnt.png?raw=true">
 
 ---
 
 ### Order Done Page
 
-<img width="1000" alt="pay" src="">
+<img width="1000" alt="pay" src="https://github.com/debrajj/thundering-orange-4285/blob/main/frontend/images/succs.png?raw=true">
 
 ---
 
