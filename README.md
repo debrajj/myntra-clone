@@ -1,7 +1,7 @@
-# Bewakoof.com-Clone
+# Myntra.Com Clone
 
 
--Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, India. Myntra is a one-stop shop for all your fashion and lifestyle needs. Being India’s largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle-free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. Myntra is the first e-commerce company to have its own private label ‘M’ and has also partnered with international brands like Kate Spade, Madewell, Topshop, Jack & Jones and more. The company has a wide range of products for men as well as women across categories like footwear, apparel, accessories and home decor.
+Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, India. Myntra is a one-stop shop for all your fashion and lifestyle needs. Being India’s largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle-free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. Myntra is the first e-commerce company to have its own private label ‘M’ and has also partnered with international brands like Kate Spade, Madewell, Topshop, Jack & Jones and more. The company has a wide range of products for men as well as women across categories like footwear, apparel, accessories and home decor.
 
 ---
 
@@ -14,6 +14,7 @@
 - JavaScript
 - MongoDB
 - NodeJS
+- Express
 
 ## Installing and Running
 
