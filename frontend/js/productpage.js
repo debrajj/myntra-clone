@@ -152,3 +152,5 @@ searchBar.addEventListener('keypress', function (e) {
     });
   }
 });
+
+
